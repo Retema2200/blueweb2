@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>PWA 藍牙應用</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="/blue/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="app-container">
+    <h1>智慧拐杖 藍牙應用</h1>
+    <div id="dataValue">狀態將顯示在這裡</div>
+    <div class="button-container">
+      <button id="connectButton">連接藍芽</button>
+      <button class="sendButton" disabled data-message="2">量測溫度</button>
+      <button class="sendButton" disabled data-message="3">量測氣壓</button>
+      <button id="measureOxygenButton" class="sendButton" disabled data-message="4">量測血氧</button>     
+      <button id="disconnectButton" disabled>斷開連線</button>
+      <button id="testNotifyButton">發送測試通知</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="TEST2.js"></script>
+</body>
+</html>
